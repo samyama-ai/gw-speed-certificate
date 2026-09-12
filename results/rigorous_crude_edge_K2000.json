@@ -1,0 +1,289 @@
+{
+ "K": 2000,
+ "edges": [
+  "173/100",
+  "347/200",
+  "87/50",
+  "349/200",
+  "7/4",
+  "351/200",
+  "44/25",
+  "353/200",
+  "177/100",
+  "71/40",
+  "89/50",
+  "357/200",
+  "179/100",
+  "359/200",
+  "9/5"
+ ],
+ "run_end": "351/200",
+ "rows": [
+  {
+   "la": "173/100",
+   "lb": "347/200",
+   "R_lo": 2.4550106785554107,
+   "R_hi": 2.461547097327381,
+   "lhs_hi": 0.21269783209705398,
+   "rhs_lo": 0.23667039466785347,
+   "margin": 0.023972562570799494,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": true
+  },
+  {
+   "la": "347/200",
+   "lb": "87/50",
+   "R_lo": 2.455226901385668,
+   "R_hi": 2.4617997890289396,
+   "lhs_hi": 0.21533979283110352,
+   "rhs_lo": 0.2346617622205882,
+   "margin": 0.019321969389484696,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": true
+  },
+  {
+   "la": "87/50",
+   "lb": "349/200",
+   "R_lo": 2.455445090752151,
+   "R_hi": 2.4620511706408283,
+   "lhs_hi": 0.21808715483370425,
+   "rhs_lo": 0.23266380786240454,
+   "margin": 0.014576653028700284,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": true
+  },
+  {
+   "la": "349/200",
+   "lb": "7/4",
+   "R_lo": 2.45565358848771,
+   "R_hi": 2.4623133971371636,
+   "lhs_hi": 0.22095462805682115,
+   "rhs_lo": 0.23066851840616037,
+   "margin": 0.009713890349339237,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": true
+  },
+  {
+   "la": "7/4",
+   "lb": "351/200",
+   "R_lo": 2.4558749902483084,
+   "R_hi": 2.4625636454370796,
+   "lhs_hi": 0.2239308974844367,
+   "rhs_lo": 0.2286889648683006,
+   "margin": 0.0047580673838638725,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": true
+  },
+  {
+   "la": "351/200",
+   "lb": "44/25",
+   "R_lo": 2.4560933061304033,
+   "R_hi": 2.462817395311687,
+   "lhs_hi": 0.2270385651752684,
+   "rhs_lo": 0.2267177954928877,
+   "margin": -0.0003207696823807289,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "44/25",
+   "lb": "353/200",
+   "R_lo": 2.4563027501878447,
+   "R_hi": 2.46308114232322,
+   "lhs_hi": 0.23028890928142673,
+   "rhs_lo": 0.22474972768442023,
+   "margin": -0.005539181597006498,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "353/200",
+   "lb": "177/100",
+   "R_lo": 2.4565136089527204,
+   "R_hi": 2.4633450410893514,
+   "lhs_hi": 0.23368085627501364,
+   "rhs_lo": 0.22278895232526513,
+   "margin": -0.010891903949748503,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "177/100",
+   "lb": "71/40",
+   "R_lo": 2.4567407571573945,
+   "R_hi": 2.463593175953526,
+   "lhs_hi": 0.23721377227209917,
+   "rhs_lo": 0.2208463721773346,
+   "margin": -0.016367400094764548,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "71/40",
+   "lb": "89/50",
+   "R_lo": 2.456953649657523,
+   "R_hi": 2.4638560413351778,
+   "lhs_hi": 0.24092599213529442,
+   "rhs_lo": 0.21890586559465935,
+   "margin": -0.022020126540635065,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "89/50",
+   "lb": "357/200",
+   "R_lo": 2.457165443274935,
+   "R_hi": 2.4641213518107965,
+   "lhs_hi": 0.24481485943818634,
+   "rhs_lo": 0.21697175164930943,
+   "margin": -0.027843107788876918,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "357/200",
+   "lb": "179/100",
+   "R_lo": 2.4573862956227748,
+   "R_hi": 2.464378497309671,
+   "lhs_hi": 0.24888517582931038,
+   "rhs_lo": 0.21505056531007435,
+   "margin": -0.033834610519236044,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "179/100",
+   "lb": "359/200",
+   "R_lo": 2.4576004404593115,
+   "R_hi": 2.46464314793475,
+   "lhs_hi": 0.25316606374087813,
+   "rhs_lo": 0.2131343962803425,
+   "margin": -0.04003166746053566,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  },
+  {
+   "la": "359/200",
+   "lb": "9/5",
+   "R_lo": 2.4578170738196334,
+   "R_hi": 2.4649063392769355,
+   "lhs_hi": 0.2576637134133556,
+   "rhs_lo": 0.21122720235491874,
+   "margin": -0.04643651105843686,
+   "checks": {
+    "kappa_pos": true,
+    "f0_inc_b0": true,
+    "h3_pos": true,
+    "h3_inc_b0": true,
+    "h3_inc_T": true,
+    "h2_inc_b0": true,
+    "h2_dec_T": true
+   },
+   "certified": false
+  }
+ ]
+}

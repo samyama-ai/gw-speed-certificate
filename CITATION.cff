@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying paper."
+title: "Certificates for strict monotonicity of the speed of the biased random walk on a {2,3} Galton-Watson tree"
+authors:
+  - family-names: Mandarapu
+    given-names: Madhulatha
+  - family-names: Kunkunuru
+    given-names: Sandeep
+license: Apache-2.0
+version: 0.1.0

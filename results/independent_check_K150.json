@@ -13,7 +13,7 @@
    "rhs_lo": 0.5395449689028918,
    "margin": 0.4146263618173453,
    "certified": true,
-   "seconds": 76.4
+   "seconds": 76.0
   },
   {
    "cell": [
@@ -26,7 +26,7 @@
    "rhs_lo": 0.3873947902921586,
    "margin": 0.24415685894924302,
    "certified": true,
-   "seconds": 74.4
+   "seconds": 76.0
   },
   {
    "cell": [
@@ -39,7 +39,7 @@
    "rhs_lo": 0.28582939568351023,
    "margin": 0.10837257666721725,
    "certified": true,
-   "seconds": 72.4
+   "seconds": 73.9
   }
  ]
 }

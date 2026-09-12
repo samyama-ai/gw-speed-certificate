@@ -1200,5 +1200,7 @@
    },
    "certified": false
   }
- ]
+ ],
+ "exact_decisions": 308,
+ "max_iters": 95
 }

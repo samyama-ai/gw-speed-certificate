@@ -1,0 +1,15 @@
+[1.730, 1.735]  margin +0.02397  CERTIFIED
+[1.735, 1.740]  margin +0.01932  CERTIFIED
+[1.740, 1.745]  margin +0.01458  CERTIFIED
+[1.745, 1.750]  margin +0.00971  CERTIFIED
+[1.750, 1.755]  margin +0.00476  CERTIFIED
+[1.755, 1.760]  margin -0.00032  no
+[1.760, 1.765]  margin -0.00554  no
+[1.765, 1.770]  margin -0.01089  no
+[1.770, 1.775]  margin -0.01637  no
+[1.775, 1.780]  margin -0.02202  no
+[1.780, 1.785]  margin -0.02784  no
+[1.785, 1.790]  margin -0.03383  no
+[1.790, 1.795]  margin -0.04003  no
+[1.795, 1.800]  margin -0.04644  no
+K=2000 edge run: certified from 1.73 to 1.755 = 351/200

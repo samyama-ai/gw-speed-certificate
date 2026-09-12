@@ -16,7 +16,7 @@ for rows, lab, mk in ((main, "K = 1000, cells 0.01", "o"), (edge, "K = 2000, cel
     ax.plot(x, y, mk, ms=3.5, label=lab)
 ax.axhline(0.0, color="k", lw=0.8)
 ax.axvline(2 / (1 + 0.5 ** 0.5), color="0.5", ls="--", lw=0.8)
-ax.text(2 / (1 + 0.5 ** 0.5) + 0.004, 0.33, "known bound\n2/(1+$\\sqrt{1/2}$)", fontsize=8, color="0.3")
+ax.text(2 / (1 + 0.5 ** 0.5) + 0.006, 0.02, "known bound\n$2/(1+\\sqrt{1/2})$", fontsize=8, color="0.3", va="bottom")
 ax.set_xlabel("$\\lambda$ (cell midpoint)")
 ax.set_ylabel("certified margin")
 ax.legend(fontsize=8, loc="upper right")

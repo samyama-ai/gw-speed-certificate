@@ -1,0 +1,23 @@
+{
+ "K_main": 1000,
+ "K_edge": 2000,
+ "K_check": 150,
+ "EPS": 1e-10,
+ "lambda_star_main": 1.74,
+ "lambda_star_combined": 1.755,
+ "lambda_star_combined_fraction": "351/200",
+ "cells_certified_main": 57,
+ "exact_decisions_main": 308,
+ "exact_decisions_edge": 66,
+ "margin_1_17": 0.4171086186321081,
+ "margin_1_40": 0.24765026216980598,
+ "margin_1_60": 0.11397556888203524,
+ "margin_1_73": 0.00916371578839794,
+ "margin_1_74_fail": -0.0008514658320655948,
+ "margin_edge_last": 0.0047580673838638725,
+ "margin_edge_fail": -0.0003207696823807289,
+ "check_margin_1_17": 0.4146263618173453,
+ "check_margin_1_40": 0.24415685894924302,
+ "check_margin_1_60": 0.10837257666721725,
+ "check_all_certified": true
+}

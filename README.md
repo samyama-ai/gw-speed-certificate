@@ -34,9 +34,15 @@ Creates a local virtual environment (numpy, mpmath, matplotlib), then writes to 
 3. Exact rational checks of the positivity and monotonicity conditions the bounds rely on.
 4. The final strict inequality, in exact rational arithmetic.
 
-Floating-point work is bounded explicitly (all accumulated relative error below 1e-12, widened by
-1e-10). `src/independent_check.py` repeats the whole computation with mpmath interval arithmetic and
-shares no code with `src/rigorous_crude.py`.
+Floating-point work is bounded explicitly. Accumulated relative error is below 2e-12 and underflow
+error below 1e-300 absolute; every distribution function is moved by 1e-10 relative plus 1e-10
+absolute in the safe direction. `src/independent_check.py` repeats the whole computation with mpmath
+interval arithmetic and shares no code with `src/rigorous_crude.py`. It takes the grid size, the
+iteration count and optional cells:
+
+```bash
+cd results && ../.venv/bin/python ../src/independent_check.py 2000 90 1.750:1.755
+```
 
 ## What is proved by hand
 

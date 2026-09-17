@@ -12,8 +12,9 @@ Conservative ingredients:
   * λ, a = 1 − λ/2, b = 1 − λ/3, h = λ/(6K) are exact Fractions; floats are only images.
   * index maps ⌈(t−a)/h⌉ / ⌊(t−a)/h⌋, t = s/(λ+s), s = νa + ih: float, with an exact-Fraction decision
     whenever the float value is within 1e-9 of an integer (count reported).
-  * envelope masses by direct convolution; after every step the CDF is moved by relative EPS = 1e-10
-    (far above the accumulated float error, about 1e-12 at K = 1000): upper envelopes get a lower CDF
+  * envelope masses by direct convolution; after every step the CDF is moved by a relative EPS = 1e-10
+    plus an absolute EPS (far above the accumulated float error, about 1e-12 relative at K = 1000,
+    and above any underflow error, below 1e-300 absolute): upper envelopes get a lower CDF
     (stochastically larger), lower envelopes a higher CDF. Every iterate is a valid envelope (L2).
   * expectation double sums have nonnegative integrands; each is widened by relative EPS.
   * monotonicity of every integrand (needed for the stochastic-order bounds) is checked by exact
@@ -53,7 +54,8 @@ def index_map(lam, nu, up):
 
 
 def upper_env(m):
-    C = np.clip(np.cumsum(m) * (1 - EPS), 0.0, 1.0)
+    # absolute shift as well as relative: covers underflow, where the relative error model fails
+    C = np.clip(np.cumsum(m) * (1 - EPS) - EPS, 0.0, 1.0)
     C[-1] = 1.0
     return np.diff(np.maximum.accumulate(C), prepend=0.0)
 

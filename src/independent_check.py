@@ -160,7 +160,13 @@ def check_cell(la, lb):
 
 
 def main():
-    cells = [(Fr(117, 100), Fr(118, 100)), (Fr(140, 100), Fr(141, 100)), (Fr(160, 100), Fr(161, 100))]
+    # optional cells after K and ITERS, as decimal "la:lb" pairs, e.g. 1.750:1.755
+    if len(sys.argv) > 3:
+        cells = [tuple(Fr(x) for x in arg.split(":")) for arg in sys.argv[3:]]
+        tag = "_" + "_".join(f"{float(la):.3f}-{float(lb):.3f}" for la, lb in cells)
+    else:
+        cells = [(Fr(117, 100), Fr(118, 100)), (Fr(140, 100), Fr(141, 100)), (Fr(160, 100), Fr(161, 100))]
+        tag = ""
     out = []
     for la, lb in cells:
         t0 = time.time()
@@ -170,7 +176,7 @@ def main():
         print(f"[{float(la):.2f},{float(lb):.2f}] K={K}: R∈[{r['R_lo']:.4f},{r['R_hi']:.4f}] lhs≤{r['lhs_hi']:+.5f} "
               f"rhs≥{r['rhs_lo']:+.5f} margin {r['margin']:+.5f} {'CERTIFIED' if r['certified'] else 'no'} ({r['seconds']}s)",
               flush=True)
-    json.dump({"K": K, "iters": ITERS, "cells": out}, open(f"independent_check_K{K}.json", "w"), indent=1)
+    json.dump({"K": K, "iters": ITERS, "cells": out}, open(f"independent_check_K{K}{tag}.json", "w"), indent=1)
 
 
 if __name__ == "__main__":

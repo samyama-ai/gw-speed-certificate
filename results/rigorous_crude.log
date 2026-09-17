@@ -1,4 +1,4 @@
-envelopes for 64 λ in 3s; exact index decisions: 308; max iters 95
+envelopes for 64 λ in 2s; exact index decisions: 308; max iters 95
 [1.17, 1.18]  R∈[2.4307,2.4390]  lhs≤+0.12426  rhs≥+0.54137  margin +0.41711  CERTIFIED
 [1.18, 1.19]  R∈[2.4311,2.4394]  lhs≤+0.12482  rhs≥+0.53369  margin +0.40887  CERTIFIED
 [1.19, 1.20]  R∈[2.4314,2.4398]  lhs≤+0.12540  rhs≥+0.52612  margin +0.40073  CERTIFIED

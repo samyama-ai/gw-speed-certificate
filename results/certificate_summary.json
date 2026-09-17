@@ -19,5 +19,8 @@
  "check_margin_1_17": 0.4146263618173453,
  "check_margin_1_40": 0.24415685894924302,
  "check_margin_1_60": 0.10837257666721725,
- "check_all_certified": true
+ "check_all_certified": true,
+ "check_margin_1_730": 0.023284901280016968,
+ "check_margin_edge_last": 0.004758067730605575,
+ "check_edge_certified": true
 }

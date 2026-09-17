@@ -20,6 +20,8 @@ Creates a local virtual environment (numpy, mpmath, matplotlib), then writes to 
 | `rigorous_crude.json` | one certificate per λ-cell of width 0.01 on [1.17, 1.80], K = 1000 |
 | `rigorous_crude_edge_K2000.json` | cells of width 0.005 on [1.73, 1.80], K = 2000 |
 | `independent_check_K150.json` | independent interval-arithmetic re-check of three cells |
+| `independent_check_K1000_1.730-1.735.json` | the same check at K = 1000 on [1.730, 1.735] (`CHECK_EDGE=1`, 48 min) |
+| `independent_check_K2000_1.750-1.755.json` | the same check at K = 2000 on the last cell, [1.750, 1.755] (`CHECK_EDGE=1`, 3 h) |
 | `certificate_summary.json` | every number quoted in the paper |
 | `fig1_margin.png` | certified margin per cell (Figure 1) |
 

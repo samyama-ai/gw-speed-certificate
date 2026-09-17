@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Collect every number the paper quotes into results/certificate_summary.json."""
 import json
+import os
 from fractions import Fraction as Fr
 
 main = json.load(open("rigorous_crude.json"))
@@ -34,5 +35,11 @@ s = {
     "check_margin_1_60": chk["cells"][2]["margin"],
     "check_all_certified": all(c["certified"] for c in chk["cells"]),
 }
+# long interval re-checks of the cells near the endpoint (CHECK_EDGE=1 ./run.sh, about 4 hours)
+if os.path.exists("independent_check_K2000_1.750-1.755.json"):
+    near = json.load(open("independent_check_K1000_1.730-1.735.json"))["cells"][0]
+    last = json.load(open("independent_check_K2000_1.750-1.755.json"))["cells"][0]
+    s.update({"check_margin_1_730": near["margin"], "check_margin_edge_last": last["margin"],
+              "check_edge_certified": near["certified"] and last["certified"]})
 json.dump(s, open("certificate_summary.json", "w"), indent=1)
 print(json.dumps(s, indent=1))
